@@ -1,17 +1,37 @@
+@keyframes backgroundHover {
+    0% {
+		background-color: rgba(40, 205, 200, 0);
+    }
+
+    100% {
+		background-color: rgba(40, 205, 200, 1);
+    }
+}
+
+div:hover
+{
+    animation: masuperanimation 2s; /* On utilise "ma super animation" définie plus tôt */
+}
 .solutions{
 	.solutions__title{
+		padding: 12% 0 8%;
 		h2{
 			font-size: 40px;
 			 font-weight: 600;
+			 margin-bottom: 2%;
 		}
 		p{
 			font-size: 18px;
 			font-weight: 300;
+			width: 50%;
+			display: block;
+			margin: 0 auto;
 		}
 	}
 	.solutions__tabswitch{
+		padding: 0 0 3%;
 		.nav{
-			border: 1px solid $secondary-color;
+			border: 1px solid $primary-color;
 			border-radius: 72px;
 			padding: 15px 0;
 		}
@@ -20,8 +40,11 @@
 			font-size: 20px;
 			font-weight: 500;
 			opacity: 0.62;
-			padding: 10px 70px !important;
-			border-right: 1px solid $secondary-color;
+			padding: 10px 75px !important;
+			border-right: 1px solid $primary-color;
+			&.active{
+				color:$primary-color;
+			}
 		}
 		.no-border-right{
 			a.nav-link{
@@ -30,6 +53,21 @@
 		}
 	}
 	.solutions__tabs{
+		.solutions-tabs__content{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			div {
+				width: 140px;
+				height: 140px;
+				border-radius: 9px;
+				border: solid 1px $primary-color;
+				margin: 20px 40px;
+				&:hover{
+					animation: backgroundHover 1s;
+				}
+			}
+		}
 
 	}
 }

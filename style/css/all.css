@@ -2429,6 +2429,15 @@ h1, h2, h3, h4, h5, h6, p, a, span, label {
   font-size: 8px;
 }
 
+.top-nav-collapse {
+  z-index: 999999;
+  top: 0px !important;
+  box-shadow: 1px 6px 6px 3px rgba(0, 0, 0, 0.06);
+  -webkit-animation-duration: 1s;
+  animation-duration: 2s;
+  height: 80px;
+}
+
 .btn {
   border: none;
   border-radius: 35px;
@@ -2585,6 +2594,15 @@ h1, h2, h3, h4, h5, h6, p, a, span, label {
   font-size: 8px;
 }
 
+.top-nav-collapse {
+  z-index: 999999;
+  top: 0px !important;
+  box-shadow: 1px 6px 6px 3px rgba(0, 0, 0, 0.06);
+  -webkit-animation-duration: 1s;
+  animation-duration: 2s;
+  height: 80px;
+}
+
 .a-propos-block .first-video, .a-propos-block .second-video {
   background-size: cover;
   background-repeat: no-repeat;
@@ -2669,10 +2687,14 @@ h1, h2, h3, h4, h5, h6, p, a, span, label {
 .CommentçaMarche-block .CommentçaMarche-block__title h2 {
   font-weight: 600;
   font-size: 40px;
+  margin-bottom: 2%;
 }
 .CommentçaMarche-block .CommentçaMarche-block__title p {
   font-weight: 500;
   font-size: 16px;
+  width: 50%;
+  display: block;
+  margin: 0 auto;
 }
 .CommentçaMarche-block .CommentçaMarche-block__content h5 {
   background-color: rgba(74, 202, 133, 0.2);
@@ -2716,16 +2738,39 @@ h1, h2, h3, h4, h5, h6, p, a, span, label {
   color: #fff;
 }
 
+@keyframes backgroundHover {
+  0% {
+    background-color: rgba(40, 205, 200, 0);
+  }
+  100% {
+    background-color: #28cdc8;
+  }
+}
+div:hover {
+  animation: masuperanimation 2s;
+  /* On utilise "ma super animation" définie plus tôt */
+}
+
+.solutions .solutions__title {
+  padding: 12% 0 8%;
+}
 .solutions .solutions__title h2 {
   font-size: 40px;
   font-weight: 600;
+  margin-bottom: 2%;
 }
 .solutions .solutions__title p {
   font-size: 18px;
   font-weight: 300;
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+.solutions .solutions__tabswitch {
+  padding: 0 0 3%;
 }
 .solutions .solutions__tabswitch .nav {
-  border: 1px solid #4aca85;
+  border: 1px solid #28cdc8;
   border-radius: 72px;
   padding: 15px 0;
 }
@@ -2734,11 +2779,29 @@ h1, h2, h3, h4, h5, h6, p, a, span, label {
   font-size: 20px;
   font-weight: 500;
   opacity: 0.62;
-  padding: 10px 70px !important;
-  border-right: 1px solid #4aca85;
+  padding: 10px 75px !important;
+  border-right: 1px solid #28cdc8;
+}
+.solutions .solutions__tabswitch a.nav-link.active {
+  color: #28cdc8;
 }
 .solutions .solutions__tabswitch .no-border-right a.nav-link {
   border-right: none;
+}
+.solutions .solutions__tabs .solutions-tabs__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.solutions .solutions__tabs .solutions-tabs__content div {
+  width: 140px;
+  height: 140px;
+  border-radius: 9px;
+  border: solid 1px #28cdc8;
+  margin: 20px 40px;
+}
+.solutions .solutions__tabs .solutions-tabs__content div:hover {
+  animation: backgroundHover 1s;
 }
 
 /*# sourceMappingURL=all.css.map */

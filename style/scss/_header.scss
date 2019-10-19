@@ -1,3 +1,4 @@
+
 .bg-wrap,
 .navbar {
 	background-color: $primary-color;
@@ -142,4 +143,13 @@
 			font-size: 8px;
 		}
 	}
+}
+
+.top-nav-collapse{
+	z-index: 999999;
+    top: 0px !important;
+    box-shadow: 1px 6px 6px 3px rgba(0, 0, 0, 0.06);
+    -webkit-animation-duration: 1s;
+    animation-duration: 2s;
+    height: 80px;
 }

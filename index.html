@@ -4,12 +4,14 @@
       <!-- Required meta tags -->
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <title>Vitl Md</title>
+      <title>Vital Med</title>
       <!-- Icons -->
       <link rel="stylesheet" href="style/fonts/font-awesome/css/font-awesome.min.css">
       <link rel="stylesheet" href="style/fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
       <!-- Bootstrap CSS -->
       <link rel="stylesheet" href="style/css/bootstrap.min.css">
+      <!-- Animate -->
+      <link rel="stylesheet" href="style/css/animate.css">
       <!-- magnific-popup -->
       <link rel="stylesheet" href="style/css/magnific-popup.css">
       <!-- all Style -->
@@ -28,7 +30,7 @@
                   <div class="collapse navbar-collapse" id="navbarCollapse">
                      <ul class="navbar-nav mr-auto w-100 justify-content-end clearfix">
                         <li class="nav-item active">
-                           <a class="nav-link" href="#hero-area">
+                           <a class="nav-link" href="#Apropos">
                            A propos
                            </a>
                         </li>
@@ -38,17 +40,17 @@
                            </a>
                         </li>
                         <li class="nav-item">
-                           <a class="nav-link" href="#team">
+                           <a class="nav-link" href="#CCM">
                            CCM
                            </a>
                         </li>
                         <li class="nav-item">
-                           <a class="nav-link" href="#pricing">
+                           <a class="nav-link" href="#Solutions">
                            Solutions
                            </a>
                         </li>
                         <li class="nav-item">
-                           <a class="nav-link" href="#testimonial">
+                           <a class="nav-link" href="#Témoignages">
                            Témoignages
                            </a>
                         </li>
@@ -114,7 +116,7 @@
             </button>
          </div>
       </div>
-      <div class="a-propos-block row u-inline-flex-center">
+      <div class="a-propos-block row u-inline-flex-center" id="Apropos">
          <div class="col-md-7">
             <div class="first-video u-flex-justify-content-center" style="background-image: url(style/img/video/DSC_7399-1200x800REV.png);">
                <a href="https://www.youtube.com/watch?v=cU_m1OjeJ48&t=465s" class="start-video-button popup-youtube u-flex-justify-content-center">
@@ -135,13 +137,13 @@
             <button class="btn btn-primary">Demander un Devis<i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
          </div>
       </div>
-      <div class="container CommentçaMarche-block">
+      <div class="container CommentçaMarche-block" id="CCM">
          <div class="CommentçaMarche-block__title text-center">
             <h2>Comment ça marche?</h2>
             <p>Lorem ipsum dolor sit amet, conse ctetur adipi scing elit. Aliq uam ex odio, is the  turpis accu msan congue euisque blandit dui Pelle ntesque habitant.</p>
          </div>
          <div class="row CommentçaMarche-block__content">
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
                <div class="CommentçaMarche-block-content__etape">
                   <h5>Etape 1</h5>
                   <h3>Etape 1</h3>
@@ -150,7 +152,7 @@
                   <p>Lorem ipsum dolor sit amet, conse ctetur adipi scing elit. Aliq uam ex odio, is the  turpis accu</p>
                </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
                <div class="CommentçaMarche-block-content__etape">
                   <h5>Etape 2</h5>
                   <h3>Etape 2</h3>
@@ -159,7 +161,7 @@
                   <p>Lorem ipsum dolor sit amet, conse ctetur adipi scing elit. Aliq uam ex odio, is the  turpis accu</p>
                </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
                <div class="CommentçaMarche-block-content__etape">
                   <h5>Etape 3</h5>
                   <h3>Etape 3</h3>
@@ -170,10 +172,10 @@
             </div>
          </div>
       </div>
-      <div class="container solutions">
+      <div class="container solutions" id="Solutions">
             <div class="row">
                <div class="col-xl-12">
-                  <div class="solutions__title text-center">
+                  <div class="solutions__title text-center wow fadeInDown" data-wow-delay="0.3s">
                      <h2>Nos Solution Médicale</h2>
                      <p>Lorem ipsum dolor sit amet, conse ctetur adipi scing elit. Aliq uam ex odio, is the  turpis accu msan congue euisque blandit dui Pelle ntesque habitant.</p>
                   </div>
@@ -184,7 +186,7 @@
                      <nav class="solutions__tabswitch u-center-content">
                         <ul class="nav" id="myTab" role="tablist">
                            <li class="nav-item">
-                              <a class="nav-link" id="Dentaire-tab" data-toggle="tab" href="#Dentaire" role="tab"
+                              <a class="nav-link active" id="Dentaire-tab" data-toggle="tab" href="#Dentaire" role="tab"
                                  aria-controls="type" aria-selected="false">Dentaire</a>
                            </li>
                            <li class="nav-item">
@@ -201,74 +203,60 @@
             </div>
          <div class="tab-content solutions__tabs" id="myTabContent">
             <div class="tab-pane fade show active" id="Dentaire" role="tabpanel" aria-labelledby="Dentaire">
-               <div class="row">
-                  <div class="col-xl-4 col-lg-4 col-md-6">
-                     test 1
-                  </div>
-                  <div class="col-xl-4 col-lg-4 col-md-6">
-                     test 1
-                  </div>
-                  <div class="col-xl-4 col-lg-4 col-md-6">
-                     test 1
-                  </div>
-                  <div class="col-xl-4 col-lg-4 col-md-6">
-                     test 1
-                  </div>
-                  <div class="col-xl-4 col-lg-4 col-md-6">
-                     test 1
-                  </div>
-                  <div class="col-xl-4 col-lg-4 col-md-6">
-                     test 1
-                  </div>
+               <div class="row solutions-tabs__content">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
                </div>
             </div>
             <div class="tab-pane fade" id="Corps" role="tabpanel" aria-labelledby="Corps">
-               <div class="row">
-                  <div class="col-xl-4 col-lg-4  col-md-6">
-                     test 2
-                  </div>
-                  <div class="col-xl-4 col-lg-4 col-md-6">
-                     test 2
-                  </div>
-                  <div class="col-xl-4 col-lg-4 col-md-6">
-                     test 2
-                  </div>
-                  <div class="col-xl-4 col-lg-4 col-md-6">
-                     test 2
-                  </div>
-                  <div class="col-xl-4 col-lg-4 col-md-6">
-                     test 2
-                  </div>
-                  <div class="col-xl-4 col-lg-4 col-md-6">
-                     test 2
-                  </div>
-                  <div class="col-xl-12">
-                     <div class="more_courses text-center">
-                        <a href="#" class="boxed_btn_rev">More Courses</a>
-                     </div>
-                  </div>
+               <div class="row solutions-tabs__content">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
                </div>
             </div>
             <div class="tab-pane fade" id="Yeux" role="tabpanel" aria-labelledby="Yeux">
-               <div class="row">
-                  <div class="col-xl-4 col-lg-4 col-md-6">
-                     test 3
-                  </div>
-                  <div class="col-xl-4 col-lg-4 col-md-6">
-                     test 3
-                  </div>
-                  <div class="col-xl-4 col-lg-4 col-md-6">
-                     test 3
-                  </div>
-                  <div class="col-xl-4 col-lg-4 col-md-6 ">
-                     test 3
-                  </div>
-                  <div class="col-xl-4 col-lg-4 col-md-6">
-                     test 3
-                  </div>
-                  <div class="col-xl-4 col-lg-4 col-md-6">
-                     test 3
-                  </div>
+               <div class="row solutions-tabs__content">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
                </div>
             </div>
          </div>
@@ -278,6 +266,10 @@
       <script src="style/js/bootstrap.min.js"></script>
       <script src="style/js/multislider.js"></script>
       <script src="style/js/jquery.magnific-popup.min.js"></script>
+      <script src="style/js/wow.js"></script>
+      <script src="style/js/jquery.nav.js"></script>
+      <script src="style/js/popper.min.js"></script>
+      <script src="style/js/jquery.easing.min.js"></script>
       <script>
          //Initialize the plugin
          $('#exampleSlider').multislider();
@@ -318,6 +310,25 @@
             preloader: false,
          
             fixedContentPos: false
+         });
+
+                  
+         /*Page Loader active
+         ========================================================*/
+         $('#preloader').fadeOut();
+
+         // Sticky Nav
+         $(window).on('scroll', function() {
+               if ($(window).scrollTop() > 50) {
+                  $('.scrolling-navbar').addClass('top-nav-collapse');
+               } else {
+                  $('.scrolling-navbar').removeClass('top-nav-collapse');
+               }
+         });
+
+         // one page navigation 
+         $('.navbar-nav').onePageNav({
+            currentClass: 'active'
          });
       </script>
    </body>
