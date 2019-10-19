@@ -1,0 +1,72 @@
+// 
+@import "variables";
+
+//poppins ExtraLight
+@font-face {
+	font-family: "poppins";
+	src: url("../fonts/poppins/Poppins-ExtraLight.otf");
+	font-weight: 200;
+}
+
+//poppins Light
+@font-face {
+	font-family: "poppins";
+	src: url("../fonts/poppins/Poppins-Light.otf");
+	font-weight: 300;
+}
+
+//poppins Regular
+@font-face {
+	font-family: "poppins";
+	src: url("../fonts/poppins/Poppins-Regular.otf");
+	font-weight: 500;
+}
+
+//poppins SemiBold
+@font-face {
+	font-family: "poppins";
+	src: url("../fonts/poppins/Poppins-SemiBold.otf");
+	font-weight: 600;
+}
+
+//poppins Bold
+@font-face {
+	font-family: "poppins";
+	src: url("../fonts/poppins/Poppins-Bold.otf");
+	font-weight: 700;
+}
+
+body {
+	font-family: "poppins" , sans-serif;
+	font-weight: 300;
+	font-size: 12px;
+}
+a{
+    &:hover{
+        color: $primary-color;
+        text-decoration: none;
+    }
+}
+
+h1, h2, h3, h4, h5, h6, p, a, span, label{
+	font-family: "poppins" , sans-serif;
+}
+
+
+// 
+@import "util";
+
+// 
+@import "header";
+
+// 
+@import "buttons";
+
+// 
+@import "header";
+
+// 
+@import "pages/module";
+
+// 
+@import "responsive";

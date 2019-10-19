@@ -1,0 +1,13 @@
+.btn{
+  border: none;
+  border-radius: 35px;
+  padding: 20px 50px;
+  color: $white-color;
+  font-size: 25px;
+}
+.btn-primary{
+  background-color: $primary-color;
+}
+.btn-secondary{
+  background-color: $secondary-color;
+}

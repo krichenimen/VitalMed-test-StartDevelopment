@@ -1,0 +1,58 @@
+.CommentçaMarche-block{
+	.CommentçaMarche-block__title{
+		padding: 12% 0 10%;
+		h2{
+			font-weight: 600;
+			font-size: 40px;
+		}
+		p{
+			font-weight: 500;
+			font-size: 16px;
+		}
+	}
+	.CommentçaMarche-block__content{
+		h5{
+			background-color: rgba(74, 202, 133, 0.2);
+			color: $secondary-color;
+			border-radius: 31px;
+			width: 120px;
+			font-size: 20px;
+			font-weight: 600;
+			text-align: center;
+			height: 45px;
+			display: block;
+			line-height: 45px;
+			position: relative;
+			top: -25px;
+		}
+		h3{
+			font-size: 36px;
+  			font-weight: 600;
+		}
+		hr{
+			height: 6px;
+			background-color: #4aca85;
+			width: 168px;
+			margin: 20px 0 15px;
+		}
+		p{
+			font-size: 16px;
+			&:last-child{
+				padding-top: 5px;
+			}
+		}
+		
+	}
+	.CommentçaMarche-block-content__etape{
+		padding: 0 69px 88px 71px;
+		&:hover{
+			background-color: $white-color;
+			box-shadow: 0 30px 60px 0 rgba(74, 202, 133, 0.2);
+			h5{
+				background-color: $secondary-color;
+				color: $white-color;
+			}
+		}
+	}
+	
+}
