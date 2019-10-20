@@ -11,6 +11,11 @@
 	font-weight: 200;
 	line-height: 1.5;
 	padding: 30px 15px!important;
+	margin-top: 15px;
+	@media screen and (min-width: 767px) and (max-width: 991px){
+		padding: 30px 7px!important;
+	}
+	
 }
 
 .navbar-expand-md .navbar-nav .nav-link:hover,
@@ -64,6 +69,9 @@
 .hero-block {
 	position: relative;
 	padding: 180px 0 0;
+	@media screen and (max-width: 991px) {
+		padding: 120px 0 0;
+	}
 	h2,
 	blockquote {
 		color: $white-color;
@@ -74,6 +82,15 @@
 		font-weight: 600;
 		line-height: 1.1;
 		padding-top: 90px;
+		@media screen and (min-width: 1199px) and (max-width: 1500px) {
+			padding-top: 50px;
+		}
+		@media screen and (min-width: 991px) and (max-width: 1199px) {
+			padding-top: 0px;
+		}
+		@media screen and (max-width: 991px) {
+			padding-top: 20px;
+		}
 	}
 	p {
 		font-weight: 700;
@@ -85,6 +102,9 @@
 		font-weight: 200;
 		font-size: 20px;
 		padding-top: 30px;
+		@media screen and (max-width: 991px) {
+			padding-bottom: 70px;
+		}
 	}
 	@media (max-width: 991px) {
 		.container .row>div:nth-of-type(2) {
@@ -99,6 +119,15 @@
 	position: relative;
 	@media screen and (min-width: 1500px) and (max-width: 1920px) {
 		top: -140px;
+	}
+	@media screen and (min-width: 1199px) and (max-width: 1500px) {
+		top: -120px;
+	}
+	@media screen and (min-width: 991px) and (max-width: 1199px) {
+		top: -40px;
+	}
+	@media screen and (max-width: 991px) {
+		top: -40px;
 	}
 	.MS-content {
 		white-space: nowrap;
@@ -115,6 +144,12 @@
 				margin-top: -12%;
 				text-align: center;
 				width: 100%;
+				@media screen and (max-width: 991px) {
+					font-size: 20px;
+				}
+				@media screen and (max-width: 767px) {
+					font-size: 15px;
+				}
 			}
 		}
 		.item {
@@ -137,6 +172,10 @@
 			padding: 13px 21px;
 			position: relative;
 			top: -55px;
+			@media screen and (max-width: 1280px) {
+				top: 0px;
+				margin-top: 10px;
+			}
 		}
 		i {
 			color: $white-color;
@@ -152,4 +191,19 @@
     -webkit-animation-duration: 1s;
     animation-duration: 2s;
     height: 80px;
+}
+.hamburger-menu{
+	border: 1px solid $white-color;
+	i{
+		color: $white-color;
+
+	}
+	&:hover{
+		background-color: $white-color;
+		transition-duration :.7s;
+		i{
+			color: $primary-color;
+		}
+	}
+	
 }

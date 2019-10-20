@@ -1,6 +1,9 @@
 .CommentçaMarche-block{
 	.CommentçaMarche-block__title{
 		padding: 12% 0 10%;
+		@media screen and (max-width: 991px) {
+			padding: 30% 0 10%;
+		}
 		h2{
 			font-weight: 600;
 			font-size: 40px;
@@ -49,6 +52,9 @@
 	}
 	.CommentçaMarche-block-content__etape{
 		padding: 0 69px 88px 71px;
+		@media screen and (max-width:991px) {
+			margin-bottom: 12%;
+		}
 		&:hover{
 			background-color: $white-color;
 			box-shadow: 0 30px 60px 0 rgba(74, 202, 133, 0.2);

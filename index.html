@@ -24,8 +24,8 @@
                <div class="container">
                   <!-- Brand and toggle get grouped for better mobile display -->
                   <a href="index.html" class="navbar-brand"><img src="style/img/logo-2.svg" alt="logo-vitaleMed" width="180px"></a>       
-                  <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                  <i class="lni-menu"></i>
+                  <button class="navbar-toggler collapsed hamburger-menu" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                     <i class="zmdi zmdi-menu"></i>
                   </button>
                   <div class="collapse navbar-collapse" id="navbarCollapse">
                      <ul class="navbar-nav mr-auto w-100 justify-content-end clearfix">
@@ -261,33 +261,42 @@
             </div>
          </div>
       </div>
-      <footer id="contact">
+      <footer>
          <div class="contact-bg">
             <div class="contact-container">
-                  <div class="footer__contact-input-container">
+                  <div id="contact" class="footer__contact-input-container">
                         <div class="footer__contact-input">
                               <h5>Envoyez nous un message</h5>
                               <form action="">
-                                 <input type="email">
-                                 <input type="text">
-                                 <input type="tel">
-                                 <input type="text">
-                                 <textarea name="" id="" cols="30" rows="10"></textarea>
-                                 <input type="checkbox" name="" id="">
-                                 <label for=""></label>
-                                 <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                                 <i class="lni-menu"></i>
-                                 </button>
+                                 <div class="form-group">
+                                    <input type="email" class="form-control"  placeholder="Email*">
+                                 </div>
+                                 <div class="form-group">
+                                    <input type="text" class="form-control"  placeholder="Nom et Prénom*">
+                                 </div>
+                                 <div class="form-group">
+                                    <input type="tel" class="form-control"  placeholder="Téléphone">
+                                 </div>
+                                 <div class="form-group">
+                                    <input type="text" class="form-control"  placeholder="Sujet">
+                                 </div>
+                                 <div class="form-group">
+                                    <textarea class="form-control" name="" id="" cols="30" rows="4" placeholder="Message"></textarea>
+                                 </div>
+                                 <div class="form-check">
+                                       <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                       <label class="form-check-label" for="exampleCheck1">En envoyant ce message, vous confirmez que vous avez lu et accepté notre politique de confidentialité.</label>
+                                 </div>
+                                 <button class="btn btn-primary">Envoyer<i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
                               </form>
                            </div>
                   </div>
                <div class="container footer__contact-info">
                   <div class="row">
                      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12">
-                        <div class="widget">
-                           <h3 class="footer-logo"><img src="assets/img/logo.png" alt=""></h3>
-                           <div class="textwidget">
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lobortis tincidunt est, et euismod purus suscipit quis.</p>
+                        <div>
+                           <div>
+                              <p>Finaldream rure dolor in reprehenderit in voluptate velit esse cillum dolore e uis nostrud exercitation isi ut aliquip ex ea commodo consequat.</p>
                            </div>
                            <div class="social-icon">
                               <a class="facebook" href="#"><i class="lni-facebook-filled"></i></a>
@@ -297,37 +306,35 @@
                            </div>
                         </div>
                      </div>
-                     <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-                        <h3 class="footer-titel">Products</h3>
+                     <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 center-text">
+                        <h3 class="center">Text</h3>
                         <ul class="footer-link">
-                           <li><a href="#">Tracking</a></li>
-                           <li><a href="#">Application</a></li>
-                           <li><a href="#">Resource Planning</a></li>
-                           <li><a href="#">Enterprise</a></li>
-                           <li><a href="#">Employee Management</a></li>
+                           <li><a href="#">Text</a></li>
+                           <li><a href="#">Text</a></li>
+                           <li><a href="#">Text</a></li>
+                           <li><a href="#">Text</a></li>
                         </ul>
                      </div>
-                     <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-                        <h3 class="footer-titel">Resources</h3>
+                     <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 center-text">
+                        <h3 class="center">Text</h3>
                         <ul class="footer-link">
-                           <li><a href="#">Payment Options</a></li>
-                           <li><a href="#">Fee Schedule</a></li>
-                           <li><a href="#">Getting Started</a></li>
-                           <li><a href="#">Identity Verification</a></li>
-                           <li><a href="#">Card Verification</a></li>
+                           <li><a href="#">Text</a></li>
+                           <li><a href="#">Text</a></li>
+                           <li><a href="#">Text</a></li>
+                           <li><a href="#">Text</a></li>
                         </ul>
                      </div>
-                     <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-                        <h3 class="footer-titel">Contact</h3>
+                     <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                        <h3>Text</h3>
                         <ul class="address">
                            <li>
-                              <a href="#"><i class="lni-map-marker"></i> 105 Madison Avenue - <br> Third Floor New York, NY 10016</a>
+                              <a href="#"><i class="zmdi zmdi-pin"></i>105 Madison Avenue - <br> Third Floor New York, NY 10016</a>
                            </li>
                            <li>
-                              <a href="#"><i class="lni-phone-handset"></i> P: +84 846 250 592</a>
+                              <a href="#"><i class="zmdi zmdi-phone-in-talk"></i>   P: +84 846 250 592</a>
                            </li>
                            <li>
-                              <a href="#"><i class="lni-envelope"></i> E: contact@uideck.com</a>
+                              <a href="#"><i class="zmdi zmdi-email"></i>E: contact@yeeoz.com</a>
                            </li>
                         </ul>
                      </div>
